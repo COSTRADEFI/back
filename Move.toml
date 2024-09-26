@@ -1,0 +1,23 @@
+[package]
+name = "grndx"
+version = "1.0.0"
+authors = []
+
+[addresses]
+grndx="13a9f1a109368730f2e355d831ba8fbf5942fb82321863d55de54cb4ebe5d18f"
+
+[dev-addresses]
+
+##[dependencies.AptosFramework]
+##git = "https://github.com/aptos-labs/aptos-core.git"
+##rev = "testnet"
+##subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
+
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "testnet" }
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "testnet" }
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-token/", rev = "testnet" } # Changed to AptosToken
+AptosTokenObjects = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "testnet", subdir = "aptos-move/framework/aptos-token-objects" }
